@@ -1,8 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkDown = require('./utility/generateMarkDown');
 const axios = require('axios');
 
-inquirer.prompt([
+inquirer
+.prompt([
     {
         type: 'input',
         name: 'username',
@@ -64,4 +66,8 @@ inquirer.prompt([
         message: 'Please list any questions here:',
     },
         
-])
+]);
+
+function init() {
+    
+}
