@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const axios = require('axios');
+const generateMarkDown = require('./utils/generateMarkDown.js')
 
 const questions = [
     {
@@ -64,5 +65,21 @@ const questions = [
         message: 'Please list any questions here:',
     },
         
-]
+];
 
+const writeToFile = (fileName, data) => {
+    fs.writeFile(fileName, data, (err) => 
+    err ? console.error(err) : console.log('Success!')
+    );
+}
+
+const init = async () => {
+    try {
+        const data = await inquirer.prompt(questions);
+        writeToFile('./utils/README.md', generateMarkDown(data));
+    }.catch (err) {
+        console.log(err);
+    }
+}
+
+init();
