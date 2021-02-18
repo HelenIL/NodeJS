@@ -1,0 +1,24 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Professional ReadME Generator",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelenIL/NodeJS.git"
+  },
+  "author": "Helen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelenIL/NodeJS/issues"
+  },
+  "homepage": "https://github.com/HelenIL/NodeJS#readme"
+}
