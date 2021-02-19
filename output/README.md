@@ -1,6 +1,6 @@
 # The Why of Fry
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 ---
 
@@ -10,24 +10,21 @@ It's about the future-past
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Tests](#tests)
+* [Contributors](#contributors)
 * [License](#license)
 * [Questions](#questions)
 
 ## Installation
-Install with care
+Install carefully
 
 ## Usage
 Use wisely
-## Testing
-test jest
-
 ## License 
-Licensed under the MIT License. Copyright © 2021
+Licensed under the GNU AGPLv3.0 License. Copyright © 2021
 
 ## Questions
 For additional information contact me at: 
 
-GitHub: [@Phillip J Fry](https://github.com/Phillip J Fry/)
+GitHub: [@Fry](https://github.com/Fry/)
 
-Email: [fry@futurama.com](mailto:fry@futurama.com)
+Email: [fryguy@futurama.com](mailto:fryguy@futurama.com)
