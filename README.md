@@ -1,11 +1,28 @@
-## README.md Generator
+# ReadMe Generator
 
-<link src="https://drive.google.com/file/d/1dGKmrX5YcWjvzWjMi-US3HPWqa8hmH3u/view?usp=sharing">
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+---
 
-Link to deployed page here: <a href="https://helenil.github.io/NodeJS/">
+## Description
+Create a ReadMe generator using Node.JS
 
-<h2>License:<h2>
-MIT
+## Table of Contents
+* [Installation](#installation)
+* [License](#license)
+* [Questions](#questions)
 
-<h2> By Helen Lindberg <h2>
+## Installation
+Inquirer
+
+## License 
+Licensed under the MIT License. Copyright © 2021
+
+## Questions
+For additional information contact me at: 
+
+GitHub: [@HelenIL](https://github.com/HelenIL/)
+
+Email: [helenilindberg@yahoo.com](mailto:helenilindberg@yahoo.com)
+
+Link to deployed page: <a href="https://helenil.github.io/NodeJS/">
