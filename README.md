@@ -25,4 +25,4 @@ GitHub: [@HelenIL](https://github.com/HelenIL/)
 
 Email: [helenilindberg@yahoo.com](mailto:helenilindberg@yahoo.com)
 
-Link to deployed page: <a href="https://helenil.github.io/NodeJS/">
+Link to deployed page: <a href="https://helenil.github.io/NodeJS/">https://helenil.github.io/NodeJS/</a>
