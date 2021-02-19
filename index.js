@@ -1,18 +1,14 @@
+'use strict';
 const inquirer = require('inquirer');
 const fs = require('fs');
-const axios = require('axios');
-const generateMarkDown = require('./utils/generateMarkDown.js')
+// const axios = require('axios');
+const generateMarkDown = require('./utils/generateMarkDown.js');
 
 const questions = [
     {
         type: 'input',
         name: 'username',
         message: 'What is your username?',
-    },
-    {
-        type: 'input',
-        name: 'repo',
-        message: 'What is your gitHub repository?',
     },
     {
         type: 'input',
@@ -30,34 +26,71 @@ const questions = [
         message: 'Briefly describe your project.',
     },
     {
-        type: 'checkbox',
+        type: 'rawlist',
         name: 'license',
         message: 'Choose your license:',
         choices: [
-            'Apache 2.0',
-            'MIT',
-            'GNU GPL v3.0',
+            'Apache 2.0', 
+            'BSD 2-Clause', 
+            'BSD 3-Clause', 
+            'GNU AGPLv3.0', 
+            'GNU GPLv2.0', 
+            'GNU GPLv3.0', 
+            'MIT', 
+            'Mozilla Public 2.0'
         ]
+    },
+    {
+        type: 'confirm',
+        name: 'confirmInstall',
+        message: 'Do you want to include notes for installation?'
     },
     {
         type: 'input',
         name: 'installation',
-        message: 'How do you install this application? What modules are needed?',
+        message: 'Include installation notes here:',
+        when: function (answers) {
+            return answers.confirmInstall;
+        }
+    },
+    {
+        type: 'confirm',
+        name: 'confirmUsage',
+        message: 'Do you want to include notes for usage?',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Describe the usage of this application.',
+        message: 'Include usage notes here:',
+        when: function (answers) {
+            return answers.confirmUsage;
+        }
+    },
+    {
+        type: 'confirm',
+        name: 'confirmContribution',
+        message: 'Do you want to include any contribution notes?'
     },
     {
         type: 'input',
         name: 'contributors',
-        message: 'List the contributors for this project, if any.',
+        message: 'Include contribution notes here:',
+        when: function (answers) {
+            return answers.confirmContribution;
+        }
+    },
+    {
+        type: 'confirm',
+        name: 'confirmTests',
+        message: 'Do you want to include notes for testing?',
     },
     {
         type: 'input',
         name: 'test',
-        message: 'Comment on testing here:',
+        message: 'Notes on testing here:',
+        when: function (answers) {
+            return answers.confirmTests;
+        }
     },
     {
         type: 'input',
@@ -76,8 +109,8 @@ const writeToFile = (fileName, data) => {
 const init = async () => {
     try {
         const data = await inquirer.prompt(questions);
-        writeToFile('./utils/README.md', generateMarkDown(data));
-    }.catch (err) {
+        writeToFile('./output/README.md', generateMarkDown(data));
+    } catch (err) {
         console.log(err);
     }
 }
