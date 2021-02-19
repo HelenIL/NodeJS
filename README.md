@@ -27,4 +27,4 @@ Email: [helenilindberg@yahoo.com](mailto:helenilindberg@yahoo.com)
 
 Link to deployed page: <a href="https://helenil.github.io/NodeJS/">https://helenil.github.io/NodeJS/</a>
 
-<img src="./Assets.ReadMeVid.gif">
+<img src="/Assets.ReadMeVid.gif">
